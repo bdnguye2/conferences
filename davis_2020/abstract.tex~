@@ -1,0 +1,62 @@
+\documentclass[journal=jctcce,manuscript=article]{achemso}
+\setkeys{acs}{articletitle=true}
+\setkeys{acs}{email=false}
+
+\usepackage{chemformula} % Formula subscripts using \ch{}
+\usepackage[T1]{fontenc} % Use modern font encodings
+\usepackage{amsmath}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{fnpos}
+\usepackage[english]{babel}
+\usepackage{array}
+\usepackage{droidsans}
+\usepackage{charter}
+\usepackage{setspace}
+\usepackage[compact]{titlesec}
+\usepackage{hyperref}
+\usepackage{braket}
+\usepackage{epstopdf}
+\usepackage{accents}
+\usepackage{footnote}
+\usepackage{threeparttable}
+
+\title{Divergence of Perturbation Theory in Noncovalent Interactions}
+\author{\underline{Brian Nguyen}, Guo Chen, Matthew M. Agee, Asbj{\"o}rn M. Burow,
+Matthew P. Tang, Filipp Furche}
+
+\begin{document}
+\vspace*{-0.5in}
+\begin{abstract}
+  Noncovalent interactions (NIs) play a large role in structural biology
+  and supramolecular chemistry. The prediction of NIs remains an outstanding
+  computational challenge. Couple-cluster singles, doubles, and perturbative
+  triples (CCSD(T)) has been the method to predict NIs. However, CCSD(T) is
+  limited to the computation of small molecules which has limited the
+  understanding of NIs to small complexes of up to $\sim 50$ atoms. Electronic
+  structure methods were developed based on small molecules with the
+  underlying assumptions that these methods may be scaled up to larger ones
+  without deterioration in accuracy. Perturbation theory has been the common
+  approach to predict NIs. The efficient second-order M{\o}ller-Plesset
+  perturbation theroy (MP2) has been shown to be accurate for small complexes
+  based on the S22 benchmark. In this work, we demonstrated that
+  the accuracy of MP2 severely deteriorates as the system size grows and
+  it is indicative of the limitations of perturbation theory for NIs.
+
+  The first step to accurately compute NIs requires methods to account for
+  London dispersion interactions, which can account up to 200$\%$ of the interaction
+  energies. RPA, which is based on the interactions between virtual
+  ground-state density fluctuations, presents itself as an accurate
+  way to describe NIs. It correctly captures three- and higher-body
+  dispersion effects due to inclusion of polarization and screening.
+  New numerical results of the S66, L7, S30L, and ROT34 test sets for RPA
+  illustrate the importance of higher-body dispersion effects.
+  This material is based upon work supported by the National Science Foundation 
+  under CHE-1800431  
+
+\end{abstract}
+
+\end{document}
