@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a LaTeX template for abstracts for WATOC 2017 in Munich, Germany
+%
+% Author instructions are below 
+%
+% Do not change the setup                                                    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{scrartcl}
+
+%%%%%%%%%%%%%%%%
+% Preamble     %
+% DO NOT TOUCH %
+%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{txfonts}
+%\usepackage[left=1.25in,right=1.25in,top=1.0in,bottom=2.10in]{geometry}
+\usepackage{ifthen}
+\usepackage{url}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here you can load your own packages if needed. 
+% 
+% \usepackage{whatever}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% DO NOT CHANGE ANY OF THE FOLLOWING DEFINITIONS
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parindent}{0cm}
+\renewcommand\refname{}
+\newcommand{\Title}[1]{
+   \begin{center}
+      \large{
+         \textbf{
+            #1
+            \vspace{1.0\baselineskip}
+         }
+      }
+   \end{center}
+}
+\newcount{\numauthors}
+\numauthors=0%
+\newcommand{\AddAuthor}[2]{%
+   \advance\numauthors by 1%
+   \large{%%
+      \ifnum\numauthors=1%
+         \textbf{#1}\textsuperscript{#2}%
+      \else%
+         \textbf{, #1}\textsuperscript{#2}%
+      \fi%
+   }%
+}%
+\newenvironment{Authors}{
+   \begin{center}
+}{
+   \end{center}
+}
+\newenvironment{Address}{
+   \begin{center}
+}{
+   \end{center}
+}
+\newenvironment{Abstract}{
+   {~}
+   \vspace{
+      \baselineskip
+   }
+   \newline{}
+   \normalsize
+}{
+}
+
+%%%%%%%%%%%%%%%%%%%%%
+% Beginning of Abstract 
+%%%%%%%%%%%%%%%%%%%%%
+
+% All formatting will be dealt with by the functions \Title, \AddAuthor, \AddAddress, ...
+\begin{document}
+% Your title goes here
+\Title{Casimir-Polder size consistency: a case for RPA}
+
+\begin{Authors}
+   % For every author add an \AddAuthor command
+   % Superscript for affiliation goes in as second argument.
+   % leave empty if no affiliation
+   \AddAuthor{\normalfont \normalsize Brian
+     D. Nguyen, Matthew Agee, Guo Chen, Asbjörn M. Burow,
+     Filipp Furche}{}%
+\end{Authors}
+%
+\begin{Address}
+   % Your address goes here. For every address add an \AddAddress command
+   % Superscript is the second argument
+   \AddAddress{University of California, Irvine, Department of
+     Chemistry, 1102 Natural Sciences II, \\ Irvine, CA 92697-2025, USA}{}%
+\end{Address}
+
+\begin{Abstract}
+
+For years, quantum chemical approaches have aimed to accurately and
+efficiently predict noncovalent interactions (NIs) between atoms
+and molecules. These include dispersion interactions, $\pi$-$\pi$
+stacking, or hydrogen and halogen bonding that play an important
+role in structural biology and supramolecular chemistry. Here we
+assess the performance of the random phase approximation (RPA),
+which has evolved from a semi-analytical technique for model
+Hamiltonians to a powerful tool for ab initio electronic structure
+calculations in chemistry and materials science. The accuracy of
+RPA for weakly interacting systems from the L7, S66, and S30L benchmarks
+illustrates the critical importance of beyond the pairwise additivity of
+NIs in moderately large sized molecules with 100 - 200 atoms. Comparison
+to the second order M{\o}ller-Plesset perturbation theory (MP2) and
+semilocal density functional approximations (DFAs) with dispersion
+correction reveals that RPA performs better than MP2 and on par with
+dispersion corrected-DFAs.
+
+
+% If you prefer using bibtex, please use "angew" as style
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End of Abstract         %
+% No text after this line %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{Abstract}
+\end{document}
