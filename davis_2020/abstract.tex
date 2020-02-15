@@ -1,6 +1,3 @@
-%\documentclass[journal=jctcce,manuscript=article]{achemso}
-%\setkeys{acs}{articletitle=true}
-%\setkeys{acs}{email=false}
 \documentclass[12pt]{article}
 \usepackage[T1]{fontenc} % Use modern font encodings
 \usepackage{amsmath}
@@ -10,7 +7,6 @@
 \usepackage{float}
 \usepackage{fancyhdr}
 \usepackage{fnpos}
-\usepackage[english]{babel}
 \usepackage{array}
 \usepackage{droidsans}
 \usepackage{charter}
@@ -18,8 +14,7 @@
 \usepackage[compact]{titlesec}
 \usepackage{hyperref}
 \usepackage{braket}
-
-
+\usepackage{siunitx}
 \usepackage[margin=1in]{geometry}
 
 
@@ -39,34 +34,26 @@
   closed-shell interactions between distant electron pairs are accurately
   captured by MBPT is implicit in many applications as well as theoretical
   approaches such as local correlation methods. However, recent benchmark
-  calculations for supramolecular complexes with $4-206$ atoms 
-  
-  Noncovalent interactions (NIs) play a large role in structural biology
-  and supramolecular chemistry. The prediction of NIs remains an outstanding
-  computational challenge. Many-body perturbation theory (MBPT) has been the
-  approach to predict NIs such as the efficient second-order M{\o}ller-Plesset
-  perturbation theory (MP2) which is accurate for small complexes
-  based on the S66 benchmark. However, recent reports revealed large errors
-  in NI energies of supramolecular complexes obtained from MBPT.
-  Prompted by these errors, we compare the performance of MP2, spin-scaled MP2,
-  dispersion-corrected semilocal density functional approximations (DFAs),
-  and the post-Kohn--Sham random phase approximation (RPA) for predicting binding
-  energies of complexes within the S66, L7, and S30L benchmarks. Numerical
-  results demonstrated that the accuracy of MP2 severely deteriorates as
-  the system size grows with an error rate of $0.1\%$ per electron.
-  Whereas, empirical dispersion-corrected DFAs and RPA errors remain virtually
-  constant.
-
-  To analyze these results, the asymptotic adiabatic connection
-  symmetry-adapted perturbation theory (AC-SAPT) is developed which uses
-  monomers at full coupling whose ground-state density is constrained to
-  the ground-state density of the complex. Taylor series expansion of AC-SAPT
-  interaction energies with respect to the coupling strength integrand is
-  shown to be convergent for nondegenerate monomers when RPA is used, while it
-  spuriously diverges for second-order MBPT. Based on the analysis and numerical
-  results, MBPT for NIs may safely be replaced with non-perturbative approaches
-  such as RPA or coupled cluster methods.
-
+  calculations for supramolecular complexes with $4-206$ atoms show that the
+  accuracy of the second-order M{\o}ller-Plesset MBPT severely deteriorates
+  as the system size grows with an error rate of approximately 0.1$\%$
+  per valence electron. To analyze these unexpected results, an asymptotic
+  adiabatic connection symmetry-adapted perturbation theory (AC-SAPT) is presented
+  which uses monomers at full coupling. A nonperturbative ``screened
+  second-order'' expression for the dispersion energy in terms of monomer
+  quantities is derived using the fluctuation--dissipation theorem. Explicit
+  expressions for the convergence radius of the AC-SAPT series are derived
+  within the random phase approximation (RPA) and MBPT. Expansion of the
+  AC-SAPT series within RPA for nondegenerate monomers is shown to always be
+  convergent whereas, it is found to spuriously diverge for second-order MBPT,
+  except for the smallest and least polarizable monomers. I will argue that
+  the the divergence of MBPT for presumably ``weak'' dispersion interactions is
+  caused by missing or incomplete ``electrodynamic'' screening of the Coulomb
+  interaction due to induced particle--hole pairs between electrons in different
+  monomers, leaving the effective interaction too strong for AC-SAPT to converge
+  within MBPT even in moderately polarizable molecules with a few tens of atoms.
+  Conclusions for electronic structure theory and computational practice will be
+  discussed.
 \end{abstract}
 
 \end{document}
