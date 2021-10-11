@@ -1,0 +1,78 @@
+Welcome everyone! My name is Brian Nguyen and I am a 5th year
+graduate student from the Furche Group. Today, I will be
+presenting on the ``Divergence of Many--Body Perturbation Theory
+for Dispersion Interactions.'' Noncovalent interactions have
+been traditionally considered ``weak'' relative to the covalent
+bond. These interactions are at least an order of magnitude weaker
+than covalent bonds. And so, the assumption that the ``weak'' closed--shell
+interactions between distant electrons validates the use of the
+many--body perturbation theory (MBPT). This is the method to
+predict the behaviors of nonvoalent interactions However, recent
+reports have shown that the Second-rder Moller--Plesset MBPT (MP2)
+yielded large errors in NIs. The question becomes why is many-body
+perturbation theory performing poorly? I tackled this question by presenting
+both numerical and theoretical results. I reevaluate the performance
+of MP2 with the S30L test set and compare it to the Random
+Phase Approximation. To analyze these results, I developed the
+asymptotic adiabatic connection symmetry-adapted perturbation
+theory (AC-SAPT). In the end, I will offer a physical interpretation
+and provide recommendations to predict these noncovalent interactions.
+Thank you for your attention and I hope to meet with you.
+
+With the S30L test set, the performance of MP2 is revaluated and
+compared to the Random Phase Approximation. The test set contains
+complexes that are important in molecular biology and supramolecular
+chemistry. Systems range from 72 to 204 atoms. These were grouped into
+nonpolar interactions, $\pi-\pi$ stacking, halogen bonding, and hydrgeon
+bonding. Along with these calculations, I developed asymptotic
+adiabatic connection symmetry--adapted perturbation theory (AC-SAPT)
+to explain this error and offer a physical interpretation of NIs.
+
+There are attractive properties of RPA to predict NIs. RPA is a non-perturbative
+method, naturally includes all possible electronic interactions, contains
+no empirical parameters, and is computationally affordable for 100s of
+atoms.
+
+All calculations were performed on TURBOMOLE V7.4. RPA total energies
+are computed in a post Kohn--Shame fashion by converging KS orbitals
+based on a semilocal density functional approximation. I treated the
+KS determinant with def2-QZVP basis set while the RPA correlation
+computed using Dunning's basis within the forzen core approximation and
+50% counterpoise correction.
+
+Looking at Fig. 2, MP2 errors are significant and large for $\pi-\pi$
+stacking complexes 1-12 with absolute average error of 34.7 kcal/mol.
+MP2 has been reported to be accurate within chemical accuracy of 1 kcal/mol for
+hydrogen bond systems based on the smaller molecules. However, for hydrogen
+bonding complexes 17 - 22, MP2 absolute average error is 5.45 kcal/mol.
+Different flavors of MP2 inherit the same shortcomings of MP2 to a significant
+degree. In comparison, RPA absolute average errors for $\pi-\pi$ stacking
+and hydrogen bonding complexes are 2.56 kcal/mol and 1.14 kcal/mol, respectively.
+RPA performs as accurate as the dispersion corrected PBE functional.
+Including the S66 and L7 test sets in Fig. 3, the MP2 binding energy errors
+grow 0.1% per valence electron while RPA errors remain fairly flat.
+
+Following these results, we derive the asymptotically exact expressions
+for the dispersion energy at large separation, see Eqns. 1) - 5). The
+Hamiltonian of the supersystem relies on the SAPT partitioning. We can
+imagine the system as a molecular supersystem AB at coupling strength
+$\alpha$. Ha and Hb is the Hamiltonian of the isolated subsystems, Vee
+is the operator of the electron--electron Coulomb interaction between
+A and B, and Vs representsa a local one-electron potential, which
+constrains the density of the supersystem groupd state to the physical
+ground state density. Using the Hellman--Feynman theorem, we can derive
+the interaction energy and the corresponding dispersion energy see Eqn. 4).
+This is our cenrtal theoretical result that include the screening of
+the bare coulomb interaction and the exchange and correlation effects.
+\kappa is the generalized screening function and performing geometric
+series expansion imples that the series converges when the eigenvalues
+are less than 1. In fig. 4, numerical analysis of this MBPT series
+show that it diverges for all molecules except for the least polarizable.
+
+A diagrammatic representation of this can be seen in fig. 5. RPA contains
+both intra- and intermonomer screening while MP2 contains no screening leading
+to divergence. MP2C slowly converges due to intramonomer screening effect.
+With both computational and theoretical results, it is no longer valid
+to view these interactions as weak and demonstrates the importance of
+this electrodynamic screening as seen in fig 6. It is safe to say that
+MBPT can be replaced with RPA for all calculations of NIs.

@@ -1,0 +1,21 @@
+
+Dispersion Size-Consistency within the Adiabatic Connection Symmetry-Adapted Perturbation Theory
+
+Noncovalent interactions (NIs) play an important role in molecular biology,
+supramolecular chemistry, materials, and molecular crystals. The
+characterization and interpretation of NIs have remained a great challenge for
+experimentalists and theorists. In a previous work, Nguyen and coworkers
+[Nguyen, B. D. et al J. Chem. Theory Comput. 2020, 16 (4), 2258–2273.]
+developed the adiabatic connection symmetry-adapted perturbation theory
+(AC-SAPT) for nondegenerate dimers and established the importance of electrodynamic
+screening to understand NIs. The AC-SAPT series within the many-body perturbation
+theory (MBPT) spuriously diverges while AC-SAPT series within random phase approximation
+is always convergent. As follow-up to the previous work, I present an extension of the AC-SAPT
+formalism within dimers to N-monomers and establish the dispersion size-consistency
+condition which states that the total dispersion energy of a N-monomer system
+is independent of any partitioning into subsystem. The development of dipsersion
+size-consistency provides an additional condition to the Casimir-Polder size-consistency,
+which is evident in long-range dispersion interactions. Next, I explore the
+disperion theories such RPA, MBPT, and SAPT that satisfy this condition. Finally,
+dispersion energy calculations are shown along with conclusions for electronic theory
+of NIs and future directions of modeling NIs.
