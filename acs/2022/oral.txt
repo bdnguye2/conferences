@@ -16,6 +16,6 @@ condition which states that the total dispersion energy of a N-monomer system
 is independent of any partitioning into subsystem. The development of dipsersion
 size-consistency provides an additional condition to the Casimir-Polder size-consistency,
 which is evident in long-range dispersion interactions. Next, I explore the
-disperion theories such RPA, MBPT, and SAPT that satisfy this condition. Finally,
-dispersion energy calculations are shown along with conclusions for electronic theory
-of NIs and future directions of modeling NIs.
+disperion theories such as RPA, MBPT, and SAPT that satisfy this condition. Finally,
+dispersion energy calculations for RPA and MBPT are shown along with conclusions for
+electronic structure theory of NIs and future directions of modeling NIs.
